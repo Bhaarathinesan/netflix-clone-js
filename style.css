@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+body{
+    background:#141414;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:black;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#E50914;
+    font-size:2rem;
+    font-weight:700;
+}
+
+.nav-right{
+    display:flex;
+    gap:10px;
+}
+
+.nav-right input{
+    padding:10px;
+    border:none;
+    border-radius:4px;
+}
+
+.nav-right button{
+    background:#E50914;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+/* Banner */
+
+.banner{
+    height:80vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.banner-content{
+    margin-left:60px;
+}
+
+.banner h1{
+    font-size:3rem;
+    max-width:600px;
+}
+
+.banner p{
+    margin:20px 0;
+    font-size:1.2rem;
+}
+
+.play-btn{
+    background:#E50914;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    cursor:pointer;
+    border-radius:4px;
+    font-size:1rem;
+}
+
+/* Movie Section */
+
+.movie-section{
+    padding:40px 60px;
+}
+
+.movie-section h2{
+    margin-bottom:20px;
+}
+
+.movie-row{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.movie-row::-webkit-scrollbar{
+    display:none;
+}
+
+.movie-card{
+    min-width:220px;
+    transition:0.4s;
+}
+
+.movie-card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.movie-card:hover{
+    transform:scale(1.08);
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:30px;
+    background:black;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:15px;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .banner-content{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .banner h1{
+        font-size:2rem;
+    }
+
+    .movie-section{
+        padding:20px;
+    }
+
+    .movie-card{
+        min-width:170px;
+    }
+}
