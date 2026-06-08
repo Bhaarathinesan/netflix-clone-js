@@ -1,0 +1,22 @@
+# Netflix Clone 🎬
+
+A Netflix-inspired movie search application built using:
+
+- HTML5
+- CSS3
+- JavaScript
+- OMDb API
+- LocalStorage
+
+## Features
+
+- Search movies
+- View movie details
+- Watch trailer (YouTube search)
+- Add movies to watchlist
+- Remove movies from watchlist
+- Responsive design
+
+## Live Demo
+
+Coming soon via GitHub Pages.
